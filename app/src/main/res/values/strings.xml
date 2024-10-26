@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Cadastro de Nadadores</string>
+
+    <!-- Categorias de Atleta -->
+    <string name="categoria_juvenil">Juvenil</string>
+    <string name="categoria_senior">Sênior</string>
+    <string name="categoria_outros">Diversos</string>
+
+    <!-- Informações básicas -->
+    <string name="campo_nome">Nome Completo</string>
+    <string name="campo_data_nasc">Data de Nascimento</string>
+    <string name="campo_residencia">Bairro de Residência</string>
+
+    <!-- Detalhes específicos -->
+    <string name="campo_anos_experiencia">Anos de Experiência</string>
+    <string name="label_saude">Status Cardiovascular</string>
+    <string name="campo_academia">Instituição de Treino</string>
+    <string name="campo_tempo_prova">Melhor Tempo (seg)</string>
+
+    <!-- Botão de confirmação -->
+    <string name="botao_registrar">Concluir Cadastro</string>
+</resources>

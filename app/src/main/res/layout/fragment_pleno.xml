@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_pleno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlenoFragment">
+
+    <EditText
+        android:id="@+id/inputNomePleno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/campo_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/inputDataNascimentoPleno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/campo_data_nasc"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/inputNomePleno"
+        app:layout_constraintStart_toStartOf="@+id/inputNomePleno"
+        app:layout_constraintEnd_toEndOf="@+id/inputNomePleno" />
+
+    <EditText
+        android:id="@+id/inputResidenciaPleno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/campo_residencia"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@+id/inputDataNascimentoPleno"
+        app:layout_constraintStart_toStartOf="@+id/inputDataNascimentoPleno"
+        app:layout_constraintEnd_toEndOf="@+id/inputDataNascimentoPleno" />
+
+    <EditText
+        android:id="@+id/inputInstituicaoPleno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/campo_academia"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/inputResidenciaPleno"
+        app:layout_constraintStart_toStartOf="@+id/inputResidenciaPleno"
+        app:layout_constraintEnd_toEndOf="@+id/inputResidenciaPleno" />
+
+    <EditText
+        android:id="@+id/inputTempoPleno"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/campo_tempo_prova"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/inputInstituicaoPleno"
+        app:layout_constraintStart_toStartOf="@+id/inputInstituicaoPleno"
+        app:layout_constraintEnd_toEndOf="@+id/inputInstituicaoPleno" />
+
+    <Button
+        android:id="@+id/btnRegistrarPleno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/botao_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/inputTempoPleno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

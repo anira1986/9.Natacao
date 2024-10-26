@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_juvenil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JuvenilFragment">
+
+    <EditText
+        android:id="@+id/inputNomeJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/campo_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/inputDataNascimentoJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/campo_data_nasc"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/inputNomeJuvenil"
+        app:layout_constraintStart_toStartOf="@+id/inputNomeJuvenil"
+        app:layout_constraintEnd_toEndOf="@+id/inputNomeJuvenil" />
+
+    <EditText
+        android:id="@+id/inputResidenciaJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/campo_residencia"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@+id/inputDataNascimentoJuvenil"
+        app:layout_constraintStart_toStartOf="@+id/inputDataNascimentoJuvenil"
+        app:layout_constraintEnd_toEndOf="@+id/inputDataNascimentoJuvenil" />
+
+    <EditText
+        android:id="@+id/inputExperienciaJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/campo_anos_experiencia"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/inputResidenciaJuvenil"
+        app:layout_constraintStart_toStartOf="@+id/inputResidenciaJuvenil"
+        app:layout_constraintEnd_toEndOf="@+id/inputResidenciaJuvenil" />
+
+    <Button
+        android:id="@+id/btnRegistrarJuvenil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/botao_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/inputExperienciaJuvenil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
